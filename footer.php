@@ -5,11 +5,6 @@
 <script src="<?php if ($this->options->CNZZtjsrc){$this->options->CNZZtjsrc();}else{} ?>" language="JavaScript"></script>
 </div>
 
-<div style="display:none">
-<script src="http://s4.cnzz.com/z_stat.php?id=1257185262&web_id=1257185262" language="JavaScript"></script>
-</div>
-
-
 <script type="text/javascript" src="<?php $this->options->themeUrl('js/nivo-lightbox.min.js'); ?>"></script>
 <script type="text/javascript">
 		$(document).ready(function(){
@@ -112,7 +107,9 @@
          <a href="http://lvlvl.cn/" target="_blank" title="创始人"> / Designed By Lunaiiy / </a>！模板个人设计. 保留所有权利.
      </div>
 <!--copyright end here-->
-
+<div style="display:none">
+<script src="http://s4.cnzz.com/z_stat.php?id=1257185262&web_id=1257185262" language="JavaScript"></script>
+</div>
 <!-- Friendship link-starts -->
 <links>
     <div class="links-box">

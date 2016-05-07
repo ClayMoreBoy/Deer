@@ -73,7 +73,7 @@
             <h3><?php $this->options->title(); _e('关于诉求与建议'); ?></h3>
                <p><?php if ($this->options->siteIntro){$this->options->siteIntro();}else{} ?>
                 <div class="s-btn">
-                    <a target="_blank" href=">http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=MwIEAwMKBQYHAQAHc0JCHVBcXg" style="text-decoration:none;"><?php _e('邮箱留言入口'); ?></a>
+                    <a target="_blank" href="http://mail.qq.com/cgi-bin/qm_share?t=qm_mailme&email=MwIEAwMKBQYHAQAHc0JCHVBcXg" style="text-decoration:none;"><?php _e('邮箱留言入口'); ?></a>
                     <a href="<?php if ($this->options->hitfun){$this->options->hitfun();}else{} ?>" target="_blank"><?php _e('触及致力乐趣'); ?></a>
                </div>
         </div>
