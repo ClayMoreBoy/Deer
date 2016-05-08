@@ -6,14 +6,10 @@ Lunai是Typecho的一套主题模板，鹿乃 - LVLVL.CN 原创主题，整体�
 
 Lunai主题升级1.7.0版，下载安装后进入设置外观，进行自定义设置，未建立正则重验，So请根据实则填写字符。
 
-个人网站：
+主题预览为本站：
 
 http://lvlvl.cn
 
 下载地址：
 
 https://github.com/Lunaiiy/Lunai
-
-主题预览为本站：
-
-http://list.lvlvl.cn
