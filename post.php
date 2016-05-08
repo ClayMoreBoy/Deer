@@ -51,6 +51,7 @@
 <!-- QitaNav-ends-->
 
 <!--Duosuo插件-starts-->
+        <div id="respond" class="comment-respond">
 <div id="comments"> 
 <?php if($this->allow('comment')): ?>
 <!-- 多说评论框 start -->
@@ -74,7 +75,7 @@ var duoshuoQuery = {short_name:"<?php if ($this->options->short_name){$this->opt
 <h4><?php _e('评论已关闭'); ?></h4> 
 <?php endif; ?> 
 </div>
-
+        </div><!--respond-->
     </div> <!--Post-->
 </div>
 

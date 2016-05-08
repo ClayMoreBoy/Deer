@@ -164,8 +164,8 @@
             </div>
             <div class="header-right">
                 <ul>
-                    <li><a href="<?php $this->options->siteUrl('Bulletin.php'); ?>" target="_blank"><span class="Bulletin"></span></a></li>
-                    <li><a href="<?php $this->options->siteUrl('sitemap.xml'); ?>" target="_blank"><span class="Sitemap"></span></a></li>
+                    <li><a href="<?php if ($this->options->Bulletinsite){$this->options->Bulletinsite();}else{} ?>" target="_blank"><span class="Bulletin"></span></a></li>
+                    <li><a href="<?php if ($this->options->Sitemapsite){$this->options->Sitemapsite();}else{} ?>" target="_blank"><span class="Sitemap"></span></a></li>
                     <li><a href="<?php $this->options->adminUrl(''); ?>" target="_blank"><span class="admin"></span></a></li>
                 </ul>
             </div>

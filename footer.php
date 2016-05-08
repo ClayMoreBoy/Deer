@@ -59,7 +59,7 @@
                     <div class="textwidget">
                         <ul>
                             <li><?php $this->options->title(); ?></li>
-                            <li><?php _e('微博：'); ?><a href="http://weibo.com/Lusuzy" target="_blank" title="新浪微博"><?php if ($this->options->SinaWBName){$this->options->SinaWBName();}else{} ?></a></li>
+                            <li><?php _e('微博：'); ?><a href="<?php if ($this->options->SinaWBsite){$this->options->SinaWBsite();}else{} ?>" target="_blank" title="新浪微博"><?php if ($this->options->SinaWBName){$this->options->SinaWBName();}else{} ?></a></li>
                             <li><?php _e('邮箱：'); $this->options->aMail(); ?></li>
                         </ul>
                      </div>
@@ -108,18 +108,19 @@
      </div>
 <!--copyright end here-->
 <div style="display:none">
-<script src="http://s4.cnzz.com/z_stat.php?id=1257185262&web_id=1257185262" language="JavaScript"></script>
+    <script src="http://s4.cnzz.com/z_stat.php?id=1257185262&web_id=1257185262" language="JavaScript"></script>
 </div>
-<!-- Friendship link-starts -->
+
 <links>
     <div class="links-box">
         <div class="links">
-            <span class="text"><span class="en-code" style="font-family: arial;font-size: 16px;"><?php _e('@'); ?></span><a href="http://wpa.qq.com/msgrd?v=3&uin=1696674719&site=qq&menu=yes" target="_blank"><?php _e('友情链接:'); ?></a></span>
-                <!--?php Links_Plugin::output(); ?-->  
+            <span class="text"><span class="en-code" style="font-family: arial;font-size: 16px;"><?php _e('@'); ?></span><a href="<?php $this->options->siteUrl(); ?>" target="_blank"><?php _e('友情链接:'); ?></a></span>
+               <a href="http://lvlvl.cn" title="鹿乃 - 致力于打造高品质的个人网站!" target="_blank">鹿乃</a>|
+            <!--?php Links_Plugin::output(); ?-->  
         </div>
     </div>
 </links>
-<!-- link-ends -->
+
 <?php else: ?>
 <?php endif; ?>
 

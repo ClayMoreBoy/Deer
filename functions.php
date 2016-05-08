@@ -14,6 +14,9 @@ function themeConfig($form) {
    	$SinaWBName = new Typecho_Widget_Helper_Form_Element_Text('SinaWBName', NULL, NULL, _t('微博名字'), _t('在这里填入新浪微博名字'));
     $form->addInput($SinaWBName); 
     
+   	$SinaWBsite = new Typecho_Widget_Helper_Form_Element_Text('SinaWBsite', NULL, NULL, _t('微博径路'), _t('在这里填入新浪微博径路链接地址字符'));
+    $form->addInput($SinaWBsite); 
+    
 	$aMail = new Typecho_Widget_Helper_Form_Element_Text('aMail', NULL, NULL, _t('邮箱'), _t('在这里填入邮箱'));
     $form->addInput($aMail);
     
@@ -23,12 +26,26 @@ function themeConfig($form) {
 	$short_name = new Typecho_Widget_Helper_Form_Element_Text('short_name', NULL, NULL, _t('Short_name'), _t('在这里填入多说Short_name'));
     $form->addInput($short_name);
     
+    $Bulletinsite = new Typecho_Widget_Helper_Form_Element_Text('Bulletinsite', NULL, NULL, _t('Bulletin径路'), _t('在这里填入Bulletin径路链接字符'));
+    $form->addInput($Bulletinsite);
+    
+    $Sitemapsite = new Typecho_Widget_Helper_Form_Element_Text('Sitemapsite', NULL, NULL, _t('Sitemap径路'), _t('在这里填入Sitemap径路链接字符'));
+    $form->addInput($Sitemapsite);
+    
     $CNZZtjsrc = new Typecho_Widget_Helper_Form_Element_Text('CNZZtjsrc', NULL, NULL, _t('CNZZ统计'), _t('在这里填入CNZZ统计的链接字符'));
     $form->addInput($CNZZtjsrc);
     
-    
     $TBulletin = new Typecho_Widget_Helper_Form_Element_Text('TBulletin', NULL, NULL, _t('TBulletin'), _t('在这里填入首页TBulletin的描述字符'));
     $form->addInput($TBulletin);
+    
+    $Liumessage = new Typecho_Widget_Helper_Form_Element_Text('Liumessage', NULL, NULL, _t('留言径路'), _t('在这里填入留言径路字符'));
+    $form->addInput($Liumessage);
+    
+    $hitfun = new Typecho_Widget_Helper_Form_Element_Text('hitfun', NULL, NULL, _t('Hit触及'), _t('在这里填入触及致力乐趣的链接字符'));
+    $form->addInput($hitfun);
+    
+    $styletext = new Typecho_Widget_Helper_Form_Element_Text('styletext', NULL, NULL, _t('Style标题'), _t('在这里填入Style标题字符，如关于诉求与建议'));
+    $form->addInput($styletext);
 	
 	$siteIntro = new Typecho_Widget_Helper_Form_Element_Textarea('siteIntro', NULL, NULL, _t('关于介绍'), _t('在这里填入关于诉求与建议介绍'));
     $form->addInput($siteIntro);

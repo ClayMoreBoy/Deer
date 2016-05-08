@@ -55,39 +55,8 @@
 </head>
 <body>
     <h1>404 Page Not Found</h1>
-    <p>页面不存在或被管理员删除， <span id="totalSecond">3</span>秒后自动返回首页</p>
+    <p>页面不存在或被管理员删除</p>
 </body>
-
-<script language="javascript" type="text/javascript">
-<!--
-    var second = document.getElementById('totalSecond').textContent;
-    if (navigator.appName.indexOf("Explorer") > -1)  //判断是IE浏览器还是Firefox浏览器，采用相应措施取得秒数
-    {
-        second = document.getElementById('totalSecond').innerText;
-    } else
-    {
-        second = document.getElementById('totalSecond').textContent;
-    }
-    setInterval("redirect()", 1000);  //每1秒钟调用redirect()方法一次
-    function redirect()
-    {
-        if (second < 0)
-        {
-            this.location.href= '//lvlvl.cn/';
-        } else
-        {
-            if (navigator.appName.indexOf("Explorer") > -1)
-            {
-                document.getElementById('totalSecond').innerText = second--;
-            } else
-            {
-                document.getElementById('totalSecond').textContent = second--;
-            }
-        }
-    }
-
--->
-</script>
     
     <div style="display:none">
         <script src="<?php if ($this->options->CNZZtjsrc){$this->options->CNZZtjsrc();}else{} ?>" language="JavaScript"></script>
