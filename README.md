@@ -8,7 +8,7 @@ Lunai主题升级1.7.0版，下载安装后进入设置外观，进行自定义�
 
 主题预览：
 
-http://lvlvl.cn/Lunai
+http://lvlvl.cn/
 
 下载地址：
 
