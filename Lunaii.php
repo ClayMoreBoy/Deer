@@ -2,6 +2,7 @@
 
 <div class="skills"><ul><li><div class="percentage"></div><div class="percent-text"></div><div class="clear"></div></li></ul></div>
 
+<?php if (!empty($this->options->ThemeConfig) && in_array('Showatm', $this->options->ThemeConfig)): ?>
 <!--welcome-starts-->
 <div class="welcome">
     <div class="container">
@@ -32,8 +33,8 @@
     </div>
 </div>	 
 <!--welcome-ends-->
-
 <div class="skills"><ul><li><div class="percentage"> </div><div class="percent-text"> </div><div class="clear"></div></li></ul></div>
+<?php endif; ?>	
 
 <!--test-starts-->
 <div class="news">

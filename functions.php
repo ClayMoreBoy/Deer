@@ -8,7 +8,7 @@ if (!defined('__TYPECHO_ROOT_DIR__')) exit;
 *
 */
 function themeConfig($form) {
-    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('LOGO地址'), _t('在这里填入一个图片URL地址, 以在沐鄢标题前加上一个LOGO'));
+    $logoUrl = new Typecho_Widget_Helper_Form_Element_Text('logoUrl', NULL, NULL, _t('LOGO地址'), _t('在这里填入一个图片URL地址, 以在标题前加上一个LOGO'));
     $form->addInput($logoUrl);
     
    	$SinaWBName = new Typecho_Widget_Helper_Form_Element_Text('SinaWBName', NULL, NULL, _t('微博名字'), _t('在这里填入新浪微博名字'));
@@ -22,9 +22,6 @@ function themeConfig($form) {
     
 	$Welcome = new Typecho_Widget_Helper_Form_Element_Text('Welcome', NULL, NULL, _t('欢迎语'), _t('在这里填入主页欢迎语'));
     $form->addInput($Welcome);
-    
-	$short_name = new Typecho_Widget_Helper_Form_Element_Text('short_name', NULL, NULL, _t('Short_name'), _t('在这里填入多说Short_name'));
-    $form->addInput($short_name);
     
     $Bulletinsite = new Typecho_Widget_Helper_Form_Element_Text('Bulletinsite', NULL, NULL, _t('Bulletin径路'), _t('在这里填入Bulletin径路链接字符'));
     $form->addInput($Bulletinsite);
@@ -53,7 +50,7 @@ function themeConfig($form) {
     
     $ThemeConfig = new Typecho_Widget_Helper_Form_Element_Checkbox('ThemeConfig', 
     array(
-    'Showatm' => _t('彩蛋'),
+    'Showatm' => _t('WelcomeDIV'),
          ),
     array('Showatm',), _t('工具开关'));
     $form->addInput($ThemeConfig->multiMode());

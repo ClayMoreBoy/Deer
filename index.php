@@ -4,7 +4,7 @@
  * 
  * @package Lunai
  * @author 陆公子
- * @version 1.7.0
+ * @version 1.7.1
  * @link http://lvlvl.cn
  */
 
