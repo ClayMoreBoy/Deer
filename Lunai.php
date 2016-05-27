@@ -37,7 +37,7 @@
                 <div class="banner-1">
                     <div class="container">
                         <div class="logo">
-                            <a href="<?php $this->options->siteUrl(); ?>"><img src="<?php if ($this->options->logoUrl){$this->options->logoUrl();}else{echo 'http://lvlvl.cn/logo.png';} ?>" alt="<?php $this->options->title(); ?>" /></a>
+                            <a href="<?php $this->options->siteUrl(); ?>"><img src="<?php if ($this->options->logoUrl){$this->options->logoUrl();}else{} ?>" alt="<?php $this->options->title(); ?>" /></a>
                         </div>
                         <div class="banner-top">
                                 <?php if ($this->options->Welcome){$this->options->Welcome();}else{$this->options->title();} ?>
@@ -61,7 +61,7 @@
                 <div class="banner-2">
                     <div class="container">
                         <div class="logo">
-                            <a href="<?php $this->options->siteUrl(); ?>"><img src="<?php if ($this->options->logoUrl){$this->options->logoUrl();}else{echo 'http://lvlvl.cn/logo.png';} ?>" alt="<?php $this->options->title(); ?>" /></a>
+                            <a href="<?php $this->options->siteUrl(); ?>"><img src="<?php if ($this->options->logoUrl){$this->options->logoUrl();}else{} ?>" alt="<?php $this->options->title(); ?>" /></a>
                         </div>
                         <div class="banner-top">
                                 <?php if ($this->options->Welcome){$this->options->Welcome();}else{$this->options->title();} ?>
@@ -85,7 +85,7 @@
                 <div class="banner-3">
                     <div class="container">
                         <div class="logo">
-                            <a href="<?php $this->options->siteUrl(); ?>"><img src="<?php if ($this->options->logoUrl){$this->options->logoUrl();}else{echo 'http://lvlvl.cn/logo.png';} ?>" alt="<?php $this->options->title(); ?>" /></a>
+                            <a href="<?php $this->options->siteUrl(); ?>"><img src="<?php if ($this->options->logoUrl){$this->options->logoUrl();}else{} ?>" alt="<?php $this->options->title(); ?>" /></a>
                         </div>
                         <div class="banner-top">
                                 <?php if ($this->options->Welcome){$this->options->Welcome();}else{$this->options->title();} ?>

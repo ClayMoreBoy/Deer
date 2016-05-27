@@ -114,7 +114,7 @@
 <links>
     <div class="links-box">
         <div class="links">
-            <span class="text"><span class="en-code" style="font-family: arial;font-size: 16px;"><?php _e('@'); ?></span><a href="<?php $this->options->siteUrl(); ?>" target="_blank"><?php _e('友情链接:'); ?></a></span>
+            <span class="text"><span class="en-code" style="font-family: arial;font-size: 16px;"><?php _e('@'); ?></span><a href="<?php _e('mailto:%s',$this->options->aMail); ?>" target="_blank"><?php _e('友情链接:'); ?></a></span>
                <a href="http://lvlvl.cn" title="鹿乃 - 致力于打造高品质的个人网站!" target="_blank">鹿乃</a>|
             <!--?php Links_Plugin::output(); ?-->  
         </div>
