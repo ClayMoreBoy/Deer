@@ -4,14 +4,29 @@
 <div style="display:none">
 <script src="<?php if ($this->options->CNZZtjsrc){$this->options->CNZZtjsrc();}else{} ?>" language="JavaScript"></script>
 </div>
-
-<script type="text/javascript" src="<?php $this->options->themeUrl('js/nivo-lightbox.min.js'); ?>"></script>
-<script type="text/javascript">
-		$(document).ready(function(){
-		$('#nivo-lightbox-demo a').nivoLightbox({ effect: 'fade' });
-		});
+ 
+<script>
+(function(){
+   var src = (document.location.protocol == "http:") ? "http://js.passport.qihucdn.com/11.0.1.js?08bd2299557fe146f56dfc5d3d2fa9da":"https://jspassport.ssl.qhimg.com/11.0.1.js?08bd2299557fe146f56dfc5d3d2fa9da";
+   document.write('<script src="' + src + '" id="sozz"><\/script>');
+})();
 </script>
-    
+
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 <?php $this->footer(); ?>
 
 <?php if($this->is('post')): ?>
@@ -104,7 +119,7 @@
 <!--copyrights start here-->
    <hr style="height:1px;border:none;border-top:1px solid #FC0B4E;"/>
      <div class="copyright">鹿乃 - LVLVL.CN 版本1.7.0
-         <a href="http://lvlvl.cn/" target="_blank" title="创始人"> / Designed By Lunaiiy / </a>！模板个人设计. 保留所有权利.
+         <a href="http://lvlvl.cn/" target="_blank" title="创始人"> / Designed By Sharrow.Lu / </a>！模板个人设计. 保留所有权利.
      </div>
 <!--copyright end here-->
 <div style="display:none">

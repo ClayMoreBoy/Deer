@@ -7,7 +7,7 @@
 <div class="welcome">
     <div class="container">
         <div class="welcome-top">
-            <div class="col-md-4 welcome-left">
+            <div class="col-md-4 welcome-left" id="welcome-left">
                 <div class="lvlight-box">
                     <div class="welcome-bottom">
                         <h4>
@@ -19,7 +19,7 @@
             <div class="col-md-4 welcome-left">
  
             </div>
-            <div class="col-md-4 welcome-left">
+            <div class="col-md-4 welcome-left" id="welcome-right">
                 <div class="lvlight-box">
                     <div class="welcome-bottom">
                         <h4>
@@ -30,6 +30,14 @@
             </div>
             <div class="clearfix"> </div>
         </div>
+        <script type="text/javascript">
+            $(function(){
+                if($("#welcome-left").height() > $("#welcome-right").height()){
+                    $("#welcome-right").css("height",$("#welcome-left").height()) }else{
+                        $("#welcome-left").css("height",$("#welcome-right").height()) 
+                    }
+            })
+        </script>
     </div>
 </div>	 
 <!--welcome-ends-->

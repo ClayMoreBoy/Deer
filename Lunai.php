@@ -13,16 +13,15 @@
     <meta name="keywords" content="<?php $this->options->keywords('_'); ?>" />
     <meta name="Description" content="<?php $this->options->description(); ?>"/>
     <meta name="generator" content="鹿乃 1.0.14.10.10" />
-    <meta name="Y:Edition" content="1.7.0" />
+    <meta name="Y:Edition" content="1.7.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" type="image/x-icon" href="<?php if ($this->options->logoUrl){$this->options->logoUrl();}else{$this->options->siteUrl('favicon.ico');} ?>" />
     <link rel='stylesheet' href='http://fonts.useso.com/css?family=Lato%3A400%2C700%2C400italic%2C700italic%7CRaleway%3A600%2C500%2C400' type='text/css' media='all' />
-    <link rel="stylesheet" type="text/css" media="all" href="http://lvlvl.cn/usr/rain/css/Quantity.css">
     <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/bootstrap.css'); ?>">
+    <link rel="stylesheet" type="text/css" media="all" href="http://lvlvl.cn/usr/rain/css/Quantity.css">
     <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/style.css'); ?>">
     <link rel="stylesheet" type="text/css" media="all" href="<?php $this->options->themeUrl('css/styles.css'); ?>">
     <script src="<?php $this->options->themeUrl('js/jquery-1.11.0.min.js'); ?>"></script>
-    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 
 </head>
 
