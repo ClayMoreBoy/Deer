@@ -1,4 +1,4 @@
-# 鹿乃 - LVLVL.CN Lunai 1.7.2主题
+# 鹿乃 -LVLVL.CN Lunai 1.7.2主题
 
 Lunai，Typecho主题
 
