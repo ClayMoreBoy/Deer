@@ -163,3 +163,29 @@ function hitokoto($cat=''){
     $re = json_decode(file_get_contents('http://api.hitokoto.us/rand?cat='.$cat),1);
     return $re['hitokoto'];
 }
+
+/**
+* 随机文章 - 页脚
+*
+*@remarks: 输出4组随机文章
+*/
+function random_posts(){
+    $defaults = array(
+        'number' => 4,
+        'xformat' => '
+                    <li><a href="{permalink}" target="_blank">{title}</a></li>'
+    );
+    $db = Typecho_Db::get();
+ 
+    $sql = $db->select()->from('table.contents')
+        ->where('status = ?','publish')
+        ->where('type = ?', 'post')
+        ->limit($defaults['number'])
+        ->order('RAND()');
+ 
+    $result = $db->fetchAll($sql);
+    foreach($result as $val){
+        $val = Typecho_Widget::widget('Widget_Abstract_Contents')->filter($val);
+        echo str_replace(array('{permalink}', '{title}'),array($val['permalink'], $val['title']), $defaults['xformat']);
+    }
+}

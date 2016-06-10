@@ -11,7 +11,7 @@
                 <div class="lvlight-box">
                     <div class="welcome-bottom">
                         <h4>
-                                
+                                <?php random_posts();?>
                         </h4>
                     </div>
                 </div>
@@ -23,7 +23,7 @@
                 <div class="lvlight-box">
                     <div class="welcome-bottom">
                         <h4>
-                            
+                            <?php random_posts();?>
                         </h4>
                     </div>
                 </div>

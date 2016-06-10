@@ -2,9 +2,9 @@
 /**
  * 鹿乃 - LVLVL.CN 原创主题，整体采用兼容思想设计，自适应各种终端形式。
  * 
- * @package Lunai
+ * @package LuNai
  * @author 陆公子
- * @version 1.7.2
+ * @version 1.7.3
  * @link http://lvlvl.cn
  */
 
