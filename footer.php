@@ -119,7 +119,8 @@
 <!--copyrights start here-->
    <hr style="height:1px;border:none;border-top:1px solid #FC0B4E;"/>
      <div class="copyright">鹿乃 - LVLVL.CN 版本1.7.3
-         <a href="http://lvlvl.cn/" target="_blank" title="创始人">　designed by Lunai　</a>！模板个人设计. 保留所有权利.
+         <a href="http://lvlvl.cn/" target="_blank" title="创始人"> 『　Designed by DeerWeak鹿弱　』 </a>！模板个人设计. 保留所有权利.
+         <br>&copy;Copyright 2015-2016 DeerWeak. All rights reserved
      </div>
 <!--copyright end here-->
 <div style="display:none">
