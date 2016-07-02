@@ -4,15 +4,14 @@
  * 
  * @package LuNai
  * @author 陆公子
- * @version 1.7.3
+ * @version 1.9.2
  * @link http://lvlvl.cn
  */
 
 if (!defined('__TYPECHO_ROOT_DIR__')) exit;
-$this->need('Lunai.php'); ?>
+$this->need('Deer.php'); 
+?>
 
-
-<?php $this->need('Lunaii.php'); ?>
-
+<?php $this->need('Deerr.php'); ?>
 
 <?php $this->need('footer.php'); ?>

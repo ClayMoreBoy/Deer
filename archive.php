@@ -1,6 +1,6 @@
 <?php if (!defined('__TYPECHO_ROOT_DIR__')) exit; ?>
 
-<?php $this->need('Lunai.php'); ?>
+<?php $this->need('Deer.php'); ?>
 
 <div class="skills"><ul><li><div class="percent-text"> </div><div class="clear"></div></li></ul></div>
 

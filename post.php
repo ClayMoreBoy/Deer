@@ -2,9 +2,9 @@
 
 <?php $this->need('header.php'); ?>
 
-<!--Posts-starts -->                                            
+<!--Posts-starts -->
 <div class="posts">
-    <div class="post type-post status-publish">          
+    <div class="post type-post status-publish">
         <div class="content-inner">
             <div class="post-header">
                 <h2 class="post-title"><a href="<?php $this->permalink() ?>" rel="bookmark" title="<?php $this->title(); _e(' - '); $this->options->title(); ?>"><?php $this->title(); ?></a></h2>
@@ -15,48 +15,51 @@
                     <span class="post-categories">Category：<?php $this->category(' , '); ?></span>
                     <span class="date-sep"> / </span>
                     <span class="post-tags">Label：<?php $this->tags(' , ', true, '无'); ?></span>
-                    
-                </div> <!--meta-->
-            </div> 
-<!--header-->
 
-<div class="content section-inner">
+                </div>
+                <!--meta-->
+            </div>
+            <!--header-->
 
-<!--Post-starts -->
-    <div class="post-content">
+            <div class="content section-inner">
 
-     <!--Postcontent-starts -->
+                <!--Post-starts -->
+                <div class="post-content">
 
-        <?php $this->content(); ?>
+                    <!--Postcontent-starts -->
+                    <?php $this->content(); ?>
+                        <!--Postcontent-ends -->
 
-     <!--Postcontent-ends -->
+                </div>
+                <!--Post-ends-->
 
-    </div> 
-<!--Post-ends-->
-
-<!--content-inner -->
-    <div class="clear"></div>
-    <div class="skills"><div class="percent-text"></div></div> 
-            </div> 
+                <!--content-inner -->
+                <div class="clear"></div>
+                <div class="skills">
+                    <div class="percent-text"></div>
+                </div>
+            </div>
         </div>
-<!--content-inner -->
+        <!--content-inner -->
 
-<!-- QitaNav-starts-->
-        <div class="clear"></div>                          
+        <!-- QitaNav-starts-->
+        <div class="clear"></div>
         <div class="post-nav">
             <?php thePrev($this); ?>
             <?php theNext($this); ?>
             <div class="clear"></div>
         </div>
-<!-- QitaNav-ends-->
+        <!-- QitaNav-ends-->
 
-<!--PL-starts-->
+        <!--PL-starts-->
         <div id="respond" class="comment-respond">
 
             <!--在这里放入你的评论代码 务必在这div之间-->
-            
-        </div><!--respond-->
-    </div> <!--Post-->
+
+        </div>
+        <!--respond-->
+    </div>
+    <!--Post-->
 </div>
 
 <?php $this->need('footer.php'); ?>

@@ -35,19 +35,6 @@ function themeConfig($form) {
     $TBulletin = new Typecho_Widget_Helper_Form_Element_Text('TBulletin', NULL, NULL, _t('TBulletin'), _t('在这里填入首页TBulletin的描述字符'));
     $form->addInput($TBulletin);
     
-    $Liumessage = new Typecho_Widget_Helper_Form_Element_Text('Liumessage', NULL, NULL, _t('留言径路'), _t('在这里填入留言径路字符'));
-    $form->addInput($Liumessage);
-    
-    $hitfun = new Typecho_Widget_Helper_Form_Element_Text('hitfun', NULL, NULL, _t('Hit触及'), _t('在这里填入触及致力乐趣的链接字符'));
-    $form->addInput($hitfun);
-    
-    $styletext = new Typecho_Widget_Helper_Form_Element_Text('styletext', NULL, NULL, _t('Style标题'), _t('在这里填入Style标题字符，如关于诉求与建议'));
-    $form->addInput($styletext);
-	
-	$siteIntro = new Typecho_Widget_Helper_Form_Element_Textarea('siteIntro', NULL, NULL, _t('关于介绍'), _t('在这里填入关于诉求与建议介绍'));
-    $form->addInput($siteIntro);
-
-    
     $ThemeConfig = new Typecho_Widget_Helper_Form_Element_Checkbox('ThemeConfig', 
     array(
     'Showatm' => _t('WelcomeDIV'),
@@ -136,10 +123,13 @@ function theNext($widget, $default = NULL){
         $img_src=$thumbUrl[1][0];          
         $img_counter = count($thumbUrl[0]);    
         if($img_counter > 0){ 
-        echo $img_src; 
+            echo $img_src; 
         }else{ 
-        echo 'http://tu.ihuan.me/api/me_all_pic_go'; 
-    } 
+            $file = file_get_contents('http://cn.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=zh-CN');
+            $array = json_decode($file);
+            $imgurl = $array->{"images"}[0]->{"url"};
+            echo $imgurl;
+    }
 } 
 
 /**
@@ -149,7 +139,7 @@ function theNext($widget, $default = NULL){
 */
 function themeInit($archive) {
     if ($archive->is('index')) {
-        $archive->parameter->pageSize = 2; // 自定义首页文章数量
+        $archive->parameter->pageSize = 4; // 自定义首页文章数量
     }
 }
 
