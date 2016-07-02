@@ -101,15 +101,13 @@
 <?php if($this->is('index')): ?>
 
 <!--copyrights start here-->
-<hr style="height:1px;border:none;border-top:1px solid #eee;" />
-<div class="copyright">鹿弱 - LVLVL.CN 版本1.9.2<a href="http://lvlvl.cn/" target="_blank" title="创始人"> 『Designed by Deerweak』 </a>！模板个人设计. 保留所有权利.
-    <br>&copy;Copyright 2015-2016 Deerweak. All rights reserved
+
+<div class="copyright">
+    <hr>鹿弱 - LVLVL.CN 版本1.9.2<a href="http://lvlvl.cn/" target="_blank" title="创始人"> 『Designed by Deerweak』 </a>！个人设计页面. 保留所有权利.
+    <br>&copy;Copyright 2015-2016 Deerweak. rights reserved
 </div>
 
 <!--copyright end here-->
-<div style="display:none">
-    <script src="http://s4.cnzz.com/z_stat.php?id=1257185262&web_id=1257185262" language="JavaScript"></script>
-</div>
 
 <links>
     <div class="links-box">

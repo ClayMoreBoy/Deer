@@ -43,7 +43,7 @@
 <div class="news">
     <div class="container">
         <div class="news-top">
-            <h3>Music</h3>
+            <h3>Blog</h3>
         </div>
         <div class="news-main">
             <?php while($this->next()): ?>
@@ -73,7 +73,6 @@
 			<div class="testimonials-top">
 				<h3>Bulletin</h3>
 				<p><?php if ($this->options->TBulletin){$this->options->TBulletin();} ?></p>
-				<p><?php echo hitokoto();?></p>
 			</div>
 		</div>
 	</div>

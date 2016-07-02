@@ -143,17 +143,6 @@ function themeInit($archive) {
     }
 }
 
-
-/**
-* hitokoto - 指定
-*
-*@remarks: hitokoto 一言
-*/
-function hitokoto($cat=''){
-    $re = json_decode(file_get_contents('http://api.hitokoto.us/rand?cat='.$cat),1);
-    return $re['hitokoto'];
-}
-
 /**
 * 随机文章 - 页脚
 *

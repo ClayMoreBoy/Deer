@@ -12,7 +12,6 @@
         ), '', ' - '); ?><?php $this->options->title(); ?></title>
     <meta name="keywords" content="<?php $this->options->keywords('_'); ?>" />
     <meta name="Description" content="<?php $this->options->description(); ?>"/>
-    <meta name="generator" content="鹿弱 1.0.14.10.10" />
     <meta name="Y:Edition" content="1.9.2" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <link rel="icon" type="image/x-icon" href="<?php if ($this->options->logoUrl){$this->options->logoUrl();}else{$this->options->siteUrl('favicon.ico');} ?>" />
