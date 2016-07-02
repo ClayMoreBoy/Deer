@@ -1,87 +1,19 @@
-html,
-body {
-    margin: 0;
-    padding: 0;
-}
-
-h1,h2,h3,h4,h5,h6,p,blockquote,address,big,cite,code,em,font,img,small,strike,sub,sup,li,ol,ul,fieldset,form,label,legend,button,table,caption,tr,th,
+h1,h2,h3,h4,h5,h6,p,code,em,img,li,ol,ul,
 td {
     margin: 0;
     padding: 0;
     border: 0;
-    font-weight: normal;
-    font-style: normal;
     font-size: 100%;
     line-height: 1;
-    font-family: inherit;
+    font-family: 'Georgia',sans-serif !important;
     text-align: left;
 }
-
-body::selection {
-    color: #FFFFFF;
-    background-color: #E84893;
-    text-shadow: none;
-}
-
-body::-moz-selection {
-    color: #FFFFFF;
-    background-color: #E84893;
-    text-shadow: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-ol,
-ul {
-    list-style: none;
-}
-
-blockquote:before,
-blockquote:after {
-    content: "";
-}
-
-a {
-    outline: none;
-}
-
-input[type=search] {
-    -moz-appearance: none;
-    -webkit-appearance: none;
-}
-
-input[type="search"]::-webkit-search-decoration,
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-results-button,
-input[type="search"]::-webkit-search-results-decoration {
-    display: none;
-}
-
 
 /* -------------------------------------------------------------------------------- */
 
 
 /*	1. Document setup
 /* -------------------------------------------------------------------------------- */
-
-body {
-    margin: 0;
-    padding: 0;
-    border: none;
-    zoom: 1.001;
-    color: #555;
-    background: rgba(255, 255, 255, 0);
-    font-family: 'Lato', 'Helvetica Neue', sans-serif;
-    font-size: 16px;
-    -ms-word-break: break-all;
-    word-break: break-word;
-    -webkit-hyphens: auto;
-    -moz-hyphens: auto;
-    hyphens: auto;
-}
 
 body a {
     font-size: 1.045em;
@@ -224,7 +156,7 @@ input#s {
 }
 
 .header {
-    background: #EB4768;
+    background: #FF2879;
 }
 
 .header-inner {
@@ -277,6 +209,7 @@ input#s {
 .header .blog-title {
     margin: 50px 0 50px 17%;
     float: left;
+    font-family: 'Georgia',sans-serif !important;
     font-size: 2.2em;
     line-height: 0;
 }
@@ -457,17 +390,19 @@ body > .navigation {
 
 .post-nav {
     padding: 4% 5.5%;
-    background: #FFBDBD;
+    background: -webkit-linear-gradient(right, rgb(230, 29, 159) 0%,rgb(249, 39, 126)100%);
 }
 
 .post-nav a {
     padding: 15px 20px;
     margin: 1.5% 0;
-    background: #D84F86;
+    background: #FF3A8A;
     border-radius: 3px;
     color: #FFF;
     float: left;
     line-height: 1;
+    text-shadow: 3px 4px 6px rgba(255, 255, 255, 0.47);
+    box-shadow: 1px 2px 1px 1px rgba(0, 0, 0, 0.2);
 }
 
 .post-nav .post-nav-newer {
@@ -583,10 +518,8 @@ body > .navigation {
 /* -------------------------------------------------------------------------------- */
 
 .footer {
-    background: rgba(rgba(245, 246, 243, 0.65));
     background: #FFF;
-    border-radius: 1px;
-    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.2);
+    box-shadow: 1px 1px 15px 1px rgba(0, 0, 0, 0.05);
 }
 
 .footer-inner {
@@ -612,10 +545,11 @@ body > .navigation {
 }
 
 .widget-title {
+    font-family: 'Georgia',sans-serif !important;
     font-weight: bold;
     text-transform: uppercase;
     margin-bottom: 15px;
-    color: #E72874;
+    color: #FF2879;
     line-height: 1;
 }
 
@@ -623,7 +557,7 @@ body > .navigation {
 /* Widget content --------------------------------------- */
 
 .widget-content {
-    color: #FA2683;
+    color: #FF2879;
     font-size: 0.925em;
     line-height: 140%;
 }
@@ -647,8 +581,9 @@ body > .navigation {
 
 .widget-content ul li {
     padding: 8px 0;
-    border-top: 1px solid #EEE;
+    list-style-image: url(../images/arw-1.png);
     line-height: 130%;
+    margin-left: 6%;
 }
 
 .widget-content ul li:first-child {
